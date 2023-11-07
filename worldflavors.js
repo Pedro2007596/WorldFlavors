@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 const port = 3000;
 
-mongoose.connect('mongodb://127.0.0.1:27017/fitzone',
+mongoose.connect('mongodb://127.0.0.1:27017/worldflavors',
 {   
     useNewUrlParser: true,
     useUnifiedTopology: true,
