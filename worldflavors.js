@@ -47,9 +47,7 @@ app.post("/cadastrarUsuario", async (req, res) => {
     }
 });
 
-app.get("/cadastrarUsuario", async(req, res)=>{
-    res.sendFile(__dirname +"/form-user.html");
-});
+
 
 const worldflavorsSchema = new mongoose.Schema({
     id_produtoexotico: {type:String, required : true} ,
@@ -97,7 +95,11 @@ const worldflavorsSchema = new mongoose.Schema({
     }
 });
 
-app.get("/cadastroAlimentoExotico", async(req, res)=>{
+app.get("/cadastrarUsuario", async(req, res)=>{
+    res.sendFile(__dirname +"/form-user.html");
+});
+
+app.get("/Alimentoexotico", async(req, res)=>{
     res.sendFile(__dirname +"/cadastroAlimentoExotico.html");
 });
 
